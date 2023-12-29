@@ -58,7 +58,7 @@ async function updateGasPricesContinuously() {
     setInterval(async () => {
       const updatedGasPrices = await gasfee(); // Fetch updated gas fees
       await updateBotPresence(updatedGasPrices.high, updatedGasPrices.average, updatedGasPrices.low);
-    }, 6000); // Update gas prices every 6 seconds
+    },60000); // Update gas prices every 60 seconds
   } catch (error) {
     console.error('Error fetching or updating gas prices:', error);
   }
