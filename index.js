@@ -45,7 +45,6 @@ async function updateBotPresence(highGas, averageGas, lowGas) {
       name:status
     });
     console.log('Bot presence updated with gas prices:', status); // Add this line to log the status set
-    console.log(status);
   } catch (error) {
     console.error('Error updating bot presence:', error);
   }
